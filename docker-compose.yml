@@ -1,0 +1,15 @@
+name: laden-site
+services:
+  web:
+    build: .
+    image: laden-site-web:local
+    restart: unless-stopped
+    ports:
+      - "${BIND_ADDR:-127.0.0.1}:${HOST_PORT:-18083}:80"
+    read_only: true
+    tmpfs:
+      - /var/cache/nginx
+      - /var/run
+      - /tmp
+    security_opt:
+      - no-new-privileges:true

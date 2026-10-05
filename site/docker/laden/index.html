@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+
+<html lang="nb">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Laden AS — vi bygger det ferdig</title>
+<meta content="Vi bygger nettsider, apper og API-er i Rust og Python, for bedrifter og privatpersoner. Fra idé til ferdig system. Kurs og foredrag om AI-verktøy." name="description"/>
+<meta content="index, follow" name="robots"/>
+<meta content="#E7F1F7" name="theme-color"/>
+<link href="https://laden.no/" rel="canonical"/>
+<meta content="Laden AS — vi bygger det ferdig" property="og:title"/>
+<meta content="Vi bygger nettsider, apper og API-er i Rust og Python, for bedrifter og privatpersoner. Fra idé til ferdig system. Kurs og foredrag om AI-verktøy." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="nb_NO" property="og:locale"/>
+<meta content="https://laden.no/" property="og:url"/>
+<link href="/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link as="font" crossorigin="" href="/fonts/inter-latin.woff2" rel="preload" type="font/woff2"/>
+<link as="image" href="/images/laden-wordmark.png" rel="preload" type="image/png"/>
+<link href="/css/site.css" rel="stylesheet"/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "Laden AS",
+  "description": "Vi bygger nettsider, apper og API-er i Rust og Python, for bedrifter og privatpersoner. Fra idé til ferdig system. Kurs og foredrag om AI-verktøy.",
+  "email": "post@laden.no",
+  "telephone": "+4799449677",
+  "taxID": "937285833",
+  "url": "https://laden.no/",
+  "areaServed": "NO",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Schweigaards gate 60 B",
+    "postalCode": "0656",
+    "addressLocality": "Oslo",
+    "addressCountry": "NO"
+  },
+  "knowsAbout": ["Rust", "Python", "UX", "API-integrasjon", "AI-verktøy", "Electron"]
+}
+</script>
+<script defer="" src="/js/site.js"></script>
+</head>
+<body>
+<a class="skip" href="#innhold">Hopp til innhold</a>
+<header class="site-header">
+<div class="wrap header-bar">
+<a aria-label="Laden — BUILD YOUR DREAM" class="brand-lockup" href="/index.html">
+<img alt="Laden" class="brand-mark" height="40" src="/images/laden-wordmark.png" width="40"/>
+<span class="brand-slogan">BUILD YOUR DREAM</span>
+</a>
+<div aria-label="Språkvalg" class="language-switch">
+<a aria-current="page" data-language="no" href="/index.html">NO</a><span aria-hidden="true">/</span><a data-language="en" href="/en/">EN</a>
+</div>
+<input class="nav-check" id="nav-toggle" type="checkbox"/>
+<label aria-controls="site-nav" aria-expanded="false" class="nav-toggle" for="nav-toggle">
+<span class="when-closed">Meny</span>
+<span class="when-open">Lukk</span>
+</label>
+<nav aria-label="Hovedmeny" class="site-nav" id="site-nav">
+<ul role="list">
+<li><a href="/tjenester/">Tjenester</a></li><li><a href="/metode/">Metode</a></li><li><a href="/portefolje/">Portefølje</a></li><li><a href="/kurs/">Kurs</a></li><li><a href="/om/">Om</a></li><li><a href="/kontakt/">Kontakt</a></li>
+</ul>
+<a class="btn btn-primary" href="/kontakt/#skjema">Ta Steget</a>
+</nav>
+</div>
+</header>
+<main id="innhold" tabindex="-1">
+<section class="hero">
+<div class="wrap hero-grid">
+<div>
+<p class="hero-brand">BUILD YOUR DREAM</p>
+<p class="eyebrow">Utvikler · Oslo</p>
+<h1>Fra idé til ferdig produkt.</h1>
+<p class="lede">Fra idé til ferdig produkt — BUILD YOUR DREAM. Hosting og drift, logo og merkevare, nettside, app eller integrasjon: Vi tar hele løpet og leverer noe som faktisk kjører.</p>
+<div class="actions">
+<a class="btn btn-primary" href="/kontakt/#skjema">Ta Steget</a>
+<a class="btn btn-secondary" href="/portefolje/">Se porteføljen</a>
+</div>
+</div>
+<fieldset class="process">
+<legend>Oppdrag</legend>
+<p aria-hidden="true" class="process-top"><span class="c1">Steg 1 av 5</span><span class="c2">Steg 2 av 5</span><span class="c3">Steg 3 av 5</span><span class="c4">Steg 4 av 5</span><span class="c5">Steg 5 av 5</span></p>
+<div aria-hidden="true" class="progress"><span></span></div>
+<div class="step-list"><div class="pick step-choice"><input checked="" id="step-1" name="process-step" type="radio"/><label for="step-1"><span class="num">01</span>Kundebehov</label></div><div class="pick step-choice"><input id="step-2" name="process-step" type="radio"/><label for="step-2"><span class="num">02</span>Strategi og design</label></div><div class="pick step-choice"><input id="step-3" name="process-step" type="radio"/><label for="step-3"><span class="num">03</span>Utvikling</label></div><div class="pick step-choice"><input id="step-4" name="process-step" type="radio"/><label for="step-4"><span class="num">04</span>Implementasjon og API</label></div><div class="pick step-choice"><input id="step-5" name="process-step" type="radio"/><label for="step-5"><span class="num">05</span>Ferdig løsning</label></div></div>
+<div aria-live="polite" class="step-panels"><p class="step-panel panel-1">Først lytter vi. Hva som skal bli bedre, hvem som bruker det, og hva som ligger utenfor. Når det er skrevet ned, er oppdraget begge parters.</p><p class="step-panel panel-2">Så tegner vi flyten — web, mobil, nettbrett. Du ser retningen før en eneste linje kode. Det er verkstedet, ikke en presentasjon.</p><p class="step-panel panel-3">Rust når det skal være raskt og kjøre lenge. Python når det skal kobles, automatiseres og komme ut fort. Vi velger etter jobben, ikke etter vane.</p><p class="step-panel panel-4">Vi kobler det mot systemene du allerede har. Feil skal være til å forstå. Når det virker, er det ditt.</p><p class="step-panel panel-5">Du får noe som kjører, en kort dokumentasjon, og en ærlig prat om neste steg — hvis du vil videre.</p></div>
+</fieldset>
+</div>
+</section>
+<section aria-labelledby="hvem" class="section">
+<div class="wrap">
+<div class="section-head">
+<h2 id="hvem">Fra idé til ferdig produkt.</h2>
+<p class="lede">Bedrift eller privat. Vi tar deg fra første tanke til merkevare, lansering og stabil drift — med samme standard hele veien.</p>
+</div>
+<div class="two">
+<article class="card">
+<h3>Bedrifter</h3>
+<p>Interne verktøy folk faktisk åpner. Kundeportaler. API-er som får systemene dine til å snakke sammen. Nettsider som tåler mandagen etter lansering — ikke bare lanseringsfesten.</p>
+</article>
+<article class="card">
+<h3>Privatpersoner</h3>
+<p>Et eget verktøy, en klubbside, en liten app, eller en idé du har gått med lenge nok. Vi tar den like alvorlig som et bedriftsoppdrag. Lite oppdrag. Samme presisjon.</p>
+</article>
+</div>
+<p class="statement">Du snakker med oss. Ikke med fire underleverandører.</p>
+</div>
+</section>
+<section aria-labelledby="tjenester" class="section">
+<div class="wrap">
+<div class="section-head">
+<h2 id="tjenester">Hele løpet. Ett sted.</h2>
+<p class="lede">Hosting, brand, web og produkter — BUILD YOUR DREAM fra første idé til ferdig drift.</p>
+</div>
+<div class="service-grid">
+<article class="card service-card">
+<p class="index">01</p>
+<h3>Hosting og drift</h3>
+<p>Vi setter opp, sikrer og drifter løsningen din. Fra domene og deploy til overvåking — stabilt når den skal brukes.</p>
+<a class="link" href="/tjenester/#hosting">Se hosting og drift</a>
+</article>
+<article class="card service-card">
+<p class="index">02</p>
+<h3>Logo og merkevare</h3>
+<p>Et tydelig uttrykk som folk kjenner igjen. Logo, identitet og grensesnitt som gjør ideen din vanskelig å overse.</p>
+<a class="link" href="/tjenester/#brand">Se merkevaren</a>
+</article>
+<article class="card service-card">
+<p class="index">03</p>
+<h3>Produkter og apper</h3>
+<p>Vi bygger det som skal selges, brukes eller få jobben gjort — nettsider, webapper, API-er og egne produkter.</p>
+<a class="link" href="/tjenester/#systemutvikling">Se hvordan vi bygger</a>
+</article>
+<article class="card service-card">
+<p class="index">04</p>
+<h3>Fra idé til drift</h3>
+<p>Du får én partner gjennom strategi, design, utvikling, lansering og videre drift. Behovet først — løsningen etterpå.</p>
+<a class="link" href="/kontakt/#skjema">Start prosjektet</a>
+</article>
+</div>
+</div>
+</section>
+<section aria-labelledby="avgrensning" class="proof">
+<div class="wrap">
+<h2 class="visually-hidden" id="avgrensning">Hvorfor oss</h2>
+<div class="proof-grid">
+<div class="proof-item">
+<h3>Idé til produkt</h3>
+<p>Strategi, brand, UX, kode, API, hosting og overlevering. Ett oppdrag. Du forholder deg til oss — hele veien.</p>
+</div>
+<div class="proof-item">
+<h3>Rust og Python</h3>
+<p>Raskt og stødig i Rust. Integrasjon, data og automatisering i Python. Vi velger, og vi kan si hvorfor.</p>
+</div>
+<div class="proof-item">
+<h3>Fysisk og digitalt</h3>
+<p>Kurs og foredrag hos dere eller på skjerm. Samme opplegg. Vi tilpasser rommet — ikke innholdet bort.</p>
+</div>
+</div>
+<blockquote class="proof-note">
+<p>Kvalitet helt inn i kjernen. Listen er satt av Laden AS.</p>
+<p>Et merke for høy kvalitet: leveranse og service, i hver detalj, fra start til slutt.</p>
+<p>Beviset ligger i arbeidet.</p>
+<p>Noen ganger ser ting for godt ut til å være sant...<br/>De fleste gangene er det det.<br/>....men noen ganger er det ikke bare en drøm ;)</p>
+</blockquote>
+</div>
+</section>
+<section aria-labelledby="arbeid" class="section">
+<div class="wrap">
+<div class="section-head section-head-row">
+<div>
+<h2 id="arbeid">Utvalgt arbeid</h2>
+<p class="lede">Ekte produkter. Lab'z, PapirGlider og Ldash — Everything you need — bygget, levert, til å prøve.</p>
+</div>
+<a class="link" href="/portefolje/">Se porteføljen</a>
+</div>
+<div class="filter-group">
+<fieldset class="filters"><legend class="visually-hidden">Filtrer prosjekter</legend><div class="filter-row"><div class="pick chip"><input checked="" id="f-alle" name="work-filter" type="radio"/><label for="f-alle">Alle</label></div><div class="pick chip"><input id="f-nett" name="work-filter" type="radio"/><label for="f-nett">Nett</label></div><div class="pick chip"><input id="f-app" name="work-filter" type="radio"/><label for="f-app">App</label></div><div class="pick chip"><input id="f-api" name="work-filter" type="radio"/><label for="f-api">API</label></div><div class="pick chip"><input id="f-python" name="work-filter" type="radio"/><label for="f-python">Python</label></div></div></fieldset>
+<div class="project-grid">
+<article class="project-card" data-api="" data-bedrift="" data-nett="">
+<p class="flag">Demo · ikke ferdig produkt</p>
+<h3><a href="/portefolje/skarverakk/">Skarverakk</a></h3>
+<p class="product-slogan">Festivalfølge, bygget for øyeblikket</p>
+<p>En festivalflate som gjør tre dager lettere å finne fram i — live nå og neste, køstatus, kart og Rockbot samlet i samme rytme.</p>
+<p class="demo-note">STRICTLY DEMO — representerer ikke et ferdig produkt.</p>
+<dl class="meta">
+<div><dt>Type</dt><dd>Festivalplattform</dd></div>
+<div><dt>Stack</dt><dd>Nett, interaksjon, live data</dd></div>
+<div><dt>Resultat</dt><dd class="result">Live demo på laden.no/demo/skarverakk/ — ikke et ferdig produkt.</dd></div>
+</dl>
+<p style="margin-top:10px"><a class="link" href="/demo/skarverakk/" rel="noopener">Åpne festival-demoen</a></p>
+</article><article class="project-card" data-api="" data-bedrift="" data-nett="" data-python="">
+<p class="flag flag-live">Live · eget produkt</p>
+<h3><a href="/portefolje/laden-labs/">Laden Labs / LLZ</a></h3>
+<p>Et hacker-HQ for etisk øving: labs, forum, terminal og gear — bygget som et levende produkt, ikke en demo-side.</p>
+<dl class="meta">
+<div><dt>Type</dt><dd>Webplattform</dd></div>
+<div><dt>Stack</dt><dd>Nett, API, Python</dd></div>
+<div><dt>Resultat</dt><dd class="result">Live på laden.no/LLZ med labs, forum og ops-flate.</dd></div>
+</dl>
+<p style="margin-top:10px"><a class="link" href="https://laden.no/LLZ/" rel="noopener">Åpne Laden Labs</a></p>
+</article><article class="project-card" data-nett="" data-privat="">
+<p class="flag flag-live">Live · Levi</p>
+<h3><a href="/portefolje/papirglider/">PapirGlider Klubben</a></h3>
+<p>Et norsk verksted for presise folder og lange glideflukter — nettside som føles som å stå ved bordet, ikke i en brosjyre.</p>
+<dl class="meta">
+<div><dt>Type</dt><dd>Nett</dd></div>
+<div><dt>Stack</dt><dd>Nett, HTML/CSS</dd></div>
+<div><dt>Resultat</dt><dd class="result">Live klubbside med veiledninger, trim og video.</dd></div>
+</dl>
+<p style="margin-top:10px"><a class="link" href="https://laden.no/levi/" rel="noopener">Åpne PapirGlider Klubben</a></p>
+</article><article class="project-card" data-app="" data-nett="" data-privat="">
+<p class="flag flag-live">Publisert · v1.0</p>
+<h3><a href="/portefolje/dash/">Ldash</a></h3>
+<p class="product-slogan">Everything you need</p>
+<p>Personlig ops-dashboard i laden.no-språket: programmer, monitor, kalender, sticky notes, abonnementer — Ctrl+` og du er inne.</p>
+<dl class="meta">
+<div><dt>Type</dt><dd>Desktop-app</dd></div>
+<div><dt>Stack</dt><dd>JavaScript, Python, C#</dd></div>
+<div><dt>Resultat</dt><dd class="result">Publisert for Mac, Windows, Linux og Android.</dd></div>
+</dl>
+<p style="margin-top:10px"><a class="link" href="/portefolje/dash/#nedlastinger" rel="noopener">Se nedlastinger</a></p>
+<div class="download-row"><a class="btn btn-primary" href="/downloads/dash/Ldash-1.0-macOS-Setup.pkg">macOS v1.0</a><a class="btn btn-secondary" href="/downloads/dash/Ldash-1.0-Windows-Setup.exe">Windows v1.0</a><a class="btn btn-secondary" href="/downloads/dash/Ldash-1.0-Linux.tar.gz">Linux v1.0</a><a class="btn btn-secondary" href="/downloads/dash/Ldash-1.0-Android.apk">Android v1.0</a></div>
+</article>
+</div>
+</div>
+</div>
+</section>
+<section aria-labelledby="metode" class="section">
+<div class="wrap">
+<div class="section-head">
+<h2 id="metode">Slik blir det gjort</h2>
+<p class="lede">Fem steg fra idé til ferdig produkt. Vi eier alle. Du slipper å koordinere fire leverandører og håpe at de mener det samme.</p>
+</div>
+<ol class="rail" role="list">
+<li><span class="num">01</span>Kundebehov</li>
+<li><span class="num">02</span>Strategi og design</li>
+<li><span class="num">03</span>Utvikling (Rust/Python)</li>
+<li><span class="num">04</span>Implementasjon og API</li>
+<li><span class="num">05</span>Ferdig løsning</li>
+</ol>
+<div class="method-note">
+<p>Fra idé til ferdig produkt — BUILD YOUR DREAM. Vi tegner, bygger, hoster, kobler og overleverer.</p>
+<a class="link" href="/metode/">Les hele løpet</a>
+</div>
+</div>
+</section>
+<section aria-labelledby="kurs-teaser" class="section">
+<div class="wrap">
+<div class="course-band">
+<div>
+<h2 id="kurs-teaser">AI-verktøy, uten mystikk.</h2>
+<p class="lede">Vi lærer teamet å bruke verktøyene de allerede betaler for. Foredrag som kan brukes mandagen etter. Hos dere, eller digitalt.</p>
+</div>
+<a class="btn btn-primary" href="/kurs/#opplegg">Be om kursforslag</a>
+</div>
+</div>
+</section>
+<section aria-labelledby="cta" class="section" id="forespor">
+<div class="wrap cta-grid">
+<div>
+<h2 id="cta">Fortell oss hva som skal løses.</h2>
+<p class="lede">Et konkret problem er perfekt. En løs idé holder også. Vi svarer med et tilbud til deg — ikke en pakke fra hylla.</p>
+<p class="method-note">Eller skriv til <a class="link" href="mailto:post@laden.no">post@laden.no</a>. Vi leser den selv.</p>
+</div>
+<div class="form-card">
+<form action="mailto:post@laden.no?subject=Foresp%C3%B8rsel%20til%20Laden%20AS" data-form="inquiry" enctype="text/plain" id="home-form" method="post" novalidate="">
+<div aria-hidden="true" class="hp">
+<label for="home-form-hp">La stå tomt</label>
+<input autocomplete="off" id="home-form-hp" name="hp_field" tabindex="-1" type="text"/>
+</div>
+<div class="form-grid">
+<div class="form-row">
+<div class="field">
+<label for="home-name">Navn</label>
+<input aria-describedby="home-name-error" autocomplete="name" id="home-name" maxlength="120" name="name" required="" type="text"/>
+<p class="field-error" hidden="" id="home-name-error"></p>
+</div>
+<div class="field">
+<label for="home-email">E-post</label>
+<input aria-describedby="home-email-error" autocomplete="email" id="home-email" maxlength="160" name="email" required="" type="email"/>
+<p class="field-error" hidden="" id="home-email-error"></p>
+</div>
+</div>
+<div class="field">
+<label for="home-audience">Bedrift eller privat <span class="opt">Valgfritt</span></label>
+<select aria-describedby="home-audience-error" id="home-audience" name="audience"><option value="">Ikke oppgitt</option><option value="Bedrift">Bedrift</option><option value="Privat">Privat</option></select>
+<p class="field-error" hidden="" id="home-audience-error"></p>
+</div>
+<div class="field">
+<label for="home-message">Hva dreier det seg om</label>
+<textarea aria-describedby="home-message-error" id="home-message" maxlength="2000" name="message" placeholder="Hva skal løses?" required="" rows="6"></textarea>
+<p class="field-error" hidden="" id="home-message-error"></p>
+</div>
+<div class="form-actions">
+<button class="btn btn-primary" type="submit">Ta Steget</button>
+</div>
+</div>
+</form>
+<div class="form-success" hidden="" tabindex="-1">
+<p class="success-lead">Takk. Vi svarer med et forslag, ikke et nyhetsbrev.</p>
+<p class="success-note">E-postprogrammet åpnes med meldingen. Send den derfra, eller skriv direkte til <a href="mailto:post@laden.no">post@laden.no</a>.</p>
+</div>
+<noscript><p class="caption">Uten JavaScript åpnes e-postprogrammet direkte.</p></noscript>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="wrap">
+<div class="footer-grid">
+<div class="footer-brand">
+<a aria-label="Laden — BUILD YOUR DREAM" class="brand-lockup" href="/index.html">
+<img alt="Laden" class="brand-mark" height="40" src="/images/laden-wordmark.png" width="40"/>
+<span class="brand-slogan">BUILD YOUR DREAM</span>
+</a>
+<p class="tagline">Fra idé til ferdig system.</p>
+</div>
+<nav aria-label="Tjenester i bunntekst">
+<h2>Tjenester</h2>
+<ul role="list">
+<li><a href="/tjenester/#systemutvikling">Systemutvikling</a></li>
+<li><a href="/tjenester/#design">Design og UX</a></li>
+<li><a href="/tjenester/#integrasjoner">Integrasjoner</a></li>
+<li><a href="/kontakt/#skjema">Tilbud</a></li>
+</ul>
+</nav>
+<nav aria-label="Kurs i bunntekst">
+<h2>Kurs</h2>
+<ul role="list">
+<li><a href="/kurs/#opplaering">Opplæring i AI-verktøy</a></li>
+<li><a href="/kurs/#foredrag">Foredrag</a></li>
+<li><a href="/kurs/#opplegg">Be om kursforslag</a></li>
+</ul>
+</nav>
+<div>
+<h2>Kontakt</h2>
+<address>
+<ul role="list">
+<li><a class="mail" href="mailto:post@laden.no">post@laden.no</a></li>
+<li><a href="tel:+4799449677">994 49 677</a></li>
+<li>Schweigaards gate 60 B<br/>0656 Oslo</li>
+<li><a href="/kontakt/#skjema">Skriv til oss</a></li>
+</ul>
+</address>
+</div>
+</div>
+<section aria-labelledby="newsletter-title" class="footer-newsletter">
+<p class="newsletter-copy" id="newsletter-title">Notater fra Laden.</p>
+<form action="/newsletter/" class="newsletter-form" method="post">
+<label class="visually-hidden" for="newsletter-email">E-post</label>
+<input autocomplete="email" id="newsletter-email" name="email" placeholder="E-post" required="" type="email"/>
+<button class="btn newsletter-submit" type="submit">Meld meg på</button>
+</form>
+</section>
+<div class="footer-base">
+<p>© 2026 Laden AS</p>
+<p>Org.nr 937 285 833</p>
+<p>Koden er åpen kildekode. Navn, merke og merkevare tilhører Laden AS.</p>
+<p><a href="/personvern/">Personvern</a></p>
+</div>
+</div>
+</footer>
+</body>
+</html>
