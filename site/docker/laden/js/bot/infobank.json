@@ -1,0 +1,174 @@
+{
+  "version": 1,
+  "updated": "2026-10-06",
+  "brand": "Laden.no",
+  "company": {
+    "en": {
+      "name": "Laden AS",
+      "orgnr": "937 285 833",
+      "ceo": "Kim Engebakken",
+      "email": "post@laden.no",
+      "phone": "994 49 677",
+      "address": "Schweigaards gate 60 B, 0656 Oslo",
+      "hours": "Open 24/7. A person replies within a couple of hours.",
+      "summary": "Laden AS takes an idea to a finished product: hosting, brand, website, app, and the thing that has to run. Oslo. You deal with us, not four vendors."
+    },
+    "no": {
+      "name": "Laden AS",
+      "orgnr": "937 285 833",
+      "ceo": "Kim Engebakken",
+      "email": "post@laden.no",
+      "phone": "994 49 677",
+      "address": "Schweigaards gate 60 B, 0656 Oslo",
+      "hours": "Åpent 24/7. Et menneske svarer innen et par timer.",
+      "summary": "Laden AS tar idéen til ferdig produkt: hosting, merkevare, nettside, app og det som skal kjøre. Oslo. Du forholder deg til oss, ikke fire leverandører."
+    }
+  },
+  "offer": {
+    "en": {
+      "headline": "Complete, stable, and predictable.",
+      "build": "One build for the defined scope: pages, form, domain pointed, then handed over.",
+      "care": "One service cost keeps it up: domain, uptime, a reply if it goes down, and edits after launch included. Nothing hidden.",
+      "timed": "A time-limited page or app can become a permanent site when you want that.",
+      "price_note": "Client work has no fixed package price on this chat. Describe the need and you get a personal proposal."
+    },
+    "no": {
+      "headline": "Komplett, stabilt og forutsigbart.",
+      "build": "Én bygging for det avgrensede omfanget: sider, skjema, domene koblet til, så overlevering.",
+      "care": "Én tjenestekostnad holder det oppe: domene, oppetid, svar hvis det går ned, og endringer etter lansering inkludert. Ingenting skjult.",
+      "timed": "En tidsavgrenset side eller app kan bli permanent når du ønsker det.",
+      "price_note": "Oppdrag har ingen fast pakkepris i denne chatten. Beskriv behovet, så får du et personlig tilbud."
+    }
+  },
+  "paths": {
+    "contact": {
+      "en": "/en/contact/",
+      "no": "/kontakt/"
+    },
+    "portfolio": {
+      "en": "/en/portfolio/",
+      "no": "/portefolje/"
+    },
+    "dash": {
+      "en": "/en/portfolio/dash/",
+      "no": "/portefolje/dash/"
+    },
+    "services": {
+      "en": "/en/services/",
+      "no": "/tjenester/"
+    },
+    "about": {
+      "en": "/en/about/",
+      "no": "/om/"
+    },
+    "courses": {
+      "en": "/en/courses/",
+      "no": "/kurs/"
+    }
+  },
+  "downloads": {
+    "macos": "/downloads/dash/Ldash-1.0-macOS-Setup.pkg",
+    "windows": "/downloads/dash/Ldash-1.0-Windows-Setup.exe",
+    "linux": "/downloads/dash/Ldash-1.0-Linux.tar.gz",
+    "android": "/downloads/dash/Ldash-1.0-Android.apk",
+    "docker_tar": "https://github.com/kim-laden/ldash-docker/releases/download/v1.0/ldash-docker-1.0.tar.gz",
+    "docker_repo": "https://github.com/kim-laden/ldash-docker",
+    "docker_local": "http://127.0.0.1:18084/docker/ldash/"
+  },
+  "topics": [
+    {
+      "id": "skarverakk",
+      "test": "\\b(skarverakk|festival)\\b",
+      "en": "Skarverakk is a festival demo, not a finished product. Open it at /demo/skarverakk/.",
+      "no": "Skarverakk er en festivaldemo, ikke et ferdig produkt. Åpne den på /demo/skarverakk/."
+    },
+    {
+      "id": "papirglider",
+      "test": "\\b(papirglider|papir|levi)\\b",
+      "en": "PapirGlider Klubben is a browser club site at /levi/. Precise folds and long glides.",
+      "no": "PapirGlider Klubben er en klubbside i nettleseren på /levi/. Presise folder og lange glideflukter."
+    },
+    {
+      "id": "labs",
+      "test": "\\b(lab'?z|labs|llz|laden labs)\\b",
+      "en": "Lab'z (Laden Labs) is live at /llz. Labs, forum and gear for ethical practice. Gear prices are in NOK. The cart does not charge. Browser-based.",
+      "no": "Lab'z (Laden Labs) er live på /llz. Labs, forum og gear for etisk øving. Gear-prisene er i NOK. Kurven trekker ingenting. Kjører i nettleseren."
+    },
+    {
+      "id": "ldash",
+      "test": "\\b(ldash|ladenops|dash|apk|iphone|nedlasting|download|installer)\\b",
+      "en": "Ldash is a local ops board: programs, monitor, calendar, sticky notes, subscriptions. Downloads on DASH. Mac and Windows builds are unsigned. No iPhone install file (Apple's terms); the Xcode project is in the source. Docker for Kali/Debian: docker_repo and the v1.0 tar; open docker_local after compose up.",
+      "no": "Ldash er et lokalt ops-brett: programmer, monitor, kalender, sticky notes, abonnementer. Nedlastinger på DASH. Mac- og Windows-bygg er usignerte. Ingen iPhone-fil (Apples vilkår); Xcode-prosjektet ligger i kilden. Docker for Kali/Debian: docker_repo og v1.0-tarball; åpne docker_local etter compose up."
+    },
+    {
+      "id": "docker",
+      "test": "\\b(docker|compose|kali|debian.?ready)\\b",
+      "en": "Ldash Docker runs the board in a browser with its own local account API, without depending on laden.no. Repo: docker_repo. Pack: docker_tar. Then tar xf, docker compose up -d --build, open docker_local. Works with docker.io and docker-compose on Kali/Debian.",
+      "no": "Ldash Docker kjører brettet i nettleseren med egen lokal konto-API, uten avhengighet til laden.no. Repo: docker_repo. Pakke: docker_tar. Deretter tar xf, docker compose up -d --build, åpne docker_local. Fungerer med docker.io og docker-compose på Kali/Debian."
+    },
+    {
+      "id": "portfolio",
+      "test": "\\b(portef[oø]lje|portfolio|projects|prosjekt)\\b",
+      "en": "Portfolio is at PORT. Skarverakk is a demo. Lab'z, PapirGlider and Ldash are live. Skarverakk, Lab'z and PapirGlider are browser-based. Ldash downloads are on the Ldash page.",
+      "no": "Porteføljen er på PORT. Skarverakk er en demo. Lab'z, PapirGlider og Ldash kjører. Skarverakk, Lab'z og PapirGlider er nettleserbaserte. Ldash lastes ned fra Ldash-siden."
+    },
+    {
+      "id": "price",
+      "test": "\\b(pris|price|prices|nok|kurv|cart|betaling|charge|cost|koster|kostnad|kost|hvor mye|how much)\\b",
+      "en": "Client work has no package price here. Describe the need and you get a proposal. Lab'z gear is listed in NOK; that cart is a demo and charges nothing.",
+      "no": "Oppdrag har ingen pakkepris her. Beskriv behovet, så får du et tilbud. Gear i Lab'z står i NOK; den kurven er en demo og trekker ingenting."
+    },
+    {
+      "id": "location",
+      "test": "\\b(oslo|adresse|address|where are|hvor er|hvor holder|location|bes[oø]k)\\b",
+      "en": "Oslo. Schweigaards gate 60 B, 0656 Oslo. post@laden.no or 994 49 677. A person replies within a couple of hours. Open 24/7.",
+      "no": "Oslo. Schweigaards gate 60 B, 0656 Oslo. post@laden.no eller 994 49 677. Et menneske svarer innen et par timer. Åpent 24/7."
+    },
+    {
+      "id": "courses",
+      "test": "\\b(kurs|course|courses|foredrag|talk|talks|oppl[æa]ring|training)\\b",
+      "en": "Courses and talks on the AI tools a team already pays for. At your place or on screen. Ask for a course proposal, or write post@laden.no.",
+      "no": "Kurs og foredrag om AI-verktøyene teamet allerede betaler for. Hos dere eller på skjerm. Be om et kursforslag, eller skriv til post@laden.no."
+    },
+    {
+      "id": "contact",
+      "test": "\\b(start|tilbud|proposal|quote|kontakt|contact|kom i gang|get started|how do i|komme i gang|ring|e-?post|email|phone|telefon)\\b",
+      "en": "Start with the problem or the idea. Contact is at CONTACT. Or write post@laden.no. We reply within a couple of hours with a proposal, not a newsletter. Open 24/7.",
+      "no": "Start med problemet eller idéen. Kontakt er på CONTACT. Eller skriv til post@laden.no. Vi svarer innen et par timer med et tilbud, ikke et nyhetsbrev. Åpent 24/7."
+    },
+    {
+      "id": "about",
+      "test": "\\b(hva (gj[øo]r|lager|bygger)|what do you|what does laden|who is laden|hvem er laden|tjeneste|services|hosting|merkevare|brand|produkt|product|om laden|about laden|build|metode|method)\\b",
+      "en": "We take it from the idea to a finished product. Hosting, brand, website, app, and the thing that has to run. Complete, stable, predictable. Edits after launch stay in the service cost. A time-limited page can become permanent. Oslo.",
+      "no": "Vi tar det fra idé til ferdig produkt. Hosting, merkevare, nettside, app og det som skal kjøre. Komplett, stabilt, forutsigbart. Endringer etter lansering ligger i tjenestekostnaden. En tidsavgrenset side kan bli permanent. Oslo."
+    },
+    {
+      "id": "who",
+      "test": "^(hei|hello|hi|hey|hvem er du|who are you|hjelp|help)\\b",
+      "en": "__WHOAMI__",
+      "no": "__WHOAMI__"
+    }
+  ],
+  "os_tips": {
+    "linux": {
+      "en": "For your Linux box: unpack Ldash-1.0-Linux.tar.gz and run sh linux/install.sh. Docker stack: docker_tar.",
+      "no": "For Linux: pakk ut Ldash-1.0-Linux.tar.gz og kjør sh linux/install.sh. Docker-stack: docker_tar."
+    },
+    "mac": {
+      "en": "For Mac: Ldash-1.0-macOS-Setup.pkg. The package is not Apple Developer ID signed, so macOS may warn the first time. No iPhone install file.",
+      "no": "For Mac: Ldash-1.0-macOS-Setup.pkg. Pakken er ikke signert med Apple Developer ID, så macOS kan advare første gang. Ingen iPhone-fil."
+    },
+    "ios": {
+      "en": "No iPhone install file for Ldash (Apple's terms). The Xcode project is in the source. On a Mac you can use the macOS package from DASH.",
+      "no": "Ingen iPhone-fil for Ldash (Apples vilkår). Xcode-prosjektet ligger i kilden. På Mac kan du bruke macOS-pakken fra DASH."
+    },
+    "windows": {
+      "en": "For Windows: Ldash-1.0-Windows-Setup.exe. The installer is unsigned, so SmartScreen may warn once.",
+      "no": "For Windows: Ldash-1.0-Windows-Setup.exe. Installeren er usignert, så SmartScreen kan advare én gang."
+    },
+    "android": {
+      "en": "For Android: Ldash-1.0-Android.apk. Allow installs from this source when prompted.",
+      "no": "For Android: Ldash-1.0-Android.apk. Tillat installasjon fra denne kilden når telefonen spør."
+    }
+  }
+}
