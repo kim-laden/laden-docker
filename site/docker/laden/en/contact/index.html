@@ -18,13 +18,13 @@
 <link as="font" crossorigin="" href="/fonts/inter-latin.woff2" rel="preload" type="font/woff2"/>
 <link as="image" href="/images/laden-wordmark.png" rel="preload" type="image/png"/>
 <link href="/css/site.css?v=20261003-caleb-size" rel="stylesheet"/>
-<link href="/css/reach-form.css?v=20261003-cream" rel="stylesheet"/>
 <link crossorigin="" href="https://w.soundcloud.com" rel="preconnect"/>
 <link crossorigin="" href="https://api.soundcloud.com" rel="preconnect"/>
 <link href="/css/soundcloud-player.css?v=20261003-mobkeep" rel="stylesheet"/>
 <script defer="" src="/js/soundcloud-player.js?v=20261003-mobkeep"></script>
 <script defer="" src="/js/caleb-corner.js?v=20261006-persona"></script>
 <script defer="" src="/js/site.js?v=v11live"></script>
+<link href="/css/signup.css?v=20261006-signup" rel="stylesheet"/>
 </head>
 <body>
 <a class="skip" href="#innhold">Skip to content</a>
@@ -135,9 +135,24 @@
 </aside>
 </div>
 </section>
-<div class="wrap reach-form">
-<div data-reach-form="df384182-5807-4a11-a839-ad35d3d529f3"></div>
+<section aria-labelledby="signup-title" class="section laden-signup" id="stay-updated">
+<div class="wrap">
+<div class="form-card">
+<h2 id="signup-title">Stay updated</h2>
+<p class="signup-lede">A short note from Laden now and then, when we ship something new. No spam. Unsubscribe any time.</p>
+<form action="/newsletter/" data-laden-signup="" method="post">
+<input name="source" type="hidden" value="contact"/><input name="lang" type="hidden" value="en"/>
+<div aria-hidden="true" class="hp"><label for="signup-website">Leave blank</label><input autocomplete="off" id="signup-website" name="website" tabindex="-1" type="text"/></div>
+<div class="signup-row">
+<div class="field"><label for="signup-email">Email</label><input autocomplete="email" id="signup-email" maxlength="254" name="email" placeholder="you@example.com" required="" type="email"/></div>
+<button class="btn btn-primary" type="submit">Sign up</button>
 </div>
+<label class="signup-consent"><input name="consent" required="" type="checkbox" value="yes"/><span>I agree that Laden AS stores my email address and sends me occasional updates. I can unsubscribe at any time. Read the <a href="/en/privacy/">privacy policy</a>.</span></label>
+<p aria-live="polite" class="signup-status" role="status"></p>
+</form>
+</div>
+</div>
+</section>
 </main>
 <footer class="site-footer">
 <div class="wrap">
@@ -193,6 +208,6 @@
 </div>
 </div>
 </footer>
-<script src="/js/reach-form.js?v=20261003-cream"></script>
+<script defer src="/js/signup.js?v=20261006-signup"></script>
 </body>
 </html>
